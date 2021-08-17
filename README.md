@@ -3,6 +3,7 @@
 
 # Table Of Contents
 * Spring Boot Back-End
+* Spring Data JPA
 * Spring Security
 * Authentication and Authorization 
 * JWT
