@@ -49,6 +49,7 @@ public class UserController {
 	}
 
 	@PostMapping(value = "/user/save", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ResponseStatus(code = HttpStatus.CREATED)
 	public ResponseEntity<UserModel> saveUser(@RequestBody UserModel user) {
 		var savedUser = this.userService.saveUser(user);
 		var uri = URI.create(ServletUriComponentsBuilder.fromCurrentRequest().path("/api/user/save").toUriString());
