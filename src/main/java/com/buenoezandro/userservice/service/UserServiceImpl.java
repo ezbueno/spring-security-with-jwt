@@ -23,7 +23,6 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Transactional
-//@AllArgsConstructor
 @Service
 public class UserServiceImpl implements UserService, UserDetailsService {
 
